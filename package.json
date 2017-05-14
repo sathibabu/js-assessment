@@ -33,5 +33,10 @@
   "private": true,
   "devDependencies": {
     "eslint": "^2.8.0"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "license": "ISC"
 }
