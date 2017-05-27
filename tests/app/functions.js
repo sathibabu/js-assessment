@@ -49,6 +49,7 @@ describe('functions', function() {
     for (var i = 0; i < arr.length; i++) {
       expect(funcs[i]()).to.eql(square(arr[i]));
     }
+    
   });
 
   it('you should be able to create a "partial" function', function() {

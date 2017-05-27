@@ -21,46 +21,67 @@ exports.arraysAnswers = {
   },
 
   removeWithoutCopy: function(arr, item) {
-
+      
   },
 
   append: function(arr, item) {
-
+        arr.push(item);
+        return arr;
   },
 
   truncate: function(arr) {
-
+     let index = arr.length-1;
+     arr.splice(index);
+     return arr;
   },
 
   prepend: function(arr, item) {
-
+      arr.unshift(item);
+      return arr;
   },
 
   curtail: function(arr) {
-
+      arr.shift();
+      return arr;
   },
 
   concat: function(arr1, arr2) {
-
+      return arr1.concat(arr2);
   },
 
   insert: function(arr, item, index) {
-
+      arr.splice(index,0,item);
+      return arr;
   },
 
   count: function(arr, item) {
-
+      
+      let sum = arr.filter((ele)=>{
+        return (ele===item)
+          
+      });
+      return sum.length;
   },
 
   duplicates: function(arr) {
-
+     
+    
   },
 
   square: function(arr) {
-
+      return arr.map((item)=>{return item*item});
   },
 
   findAllOccurrences: function(arr, target) {
+      let sum =[]; 
 
+      arr.filter((ele,index)=>{
+        if(ele===target){
+            sum.push(index);
+        }
+      
+      });
+
+      return sum;
   }
 };
