@@ -17,6 +17,7 @@ exports.numbersAnswers = {
   },
 
   multiply: function(a, b) {
-  		return (a*b).toFixed(1);
+    let result = (a*b).toFixed(1);
+  		return parseFloat(result);
   }
 };
